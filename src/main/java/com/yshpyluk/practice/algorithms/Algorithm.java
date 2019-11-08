@@ -1,4 +1,4 @@
-package com.yshpyluk.practice.algorythms;
+package com.yshpyluk.practice.algorithms;
 
 import java.util.List;
 
@@ -7,6 +7,12 @@ import java.util.List;
  *
  * @author yshpyluk
  */
-public interface Algorithm {
-	void sort(List list);
+public abstract class Algorithm {
+	public abstract void sort(List<Integer> list);
+
+	protected void swap(List<Integer> list, int positionA, int positionB) {
+		Integer placeholder = list.get(positionA);
+		list.set(positionA, list.get(positionB));
+		list.set(positionB, placeholder);
+	}
 }

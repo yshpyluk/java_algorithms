@@ -5,8 +5,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.yshpyluk.practice</groupId>
-	<artifactId>java_algorythms</artifactId>
+	<artifactId>java_algorithms</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>
